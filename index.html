@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" href="1.png" type="image/x-icon" />
+    <title>Covid-Tracker</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="title">
+        <i class="fa-solid fa-virus-covid-slash"></i>Covid-Tracker
+      </div>
+      <div class="tags center">
+        <a href="#box" class="center">Home</a>
+        <a href="#table" class="center">Table</a>
+        <a href="#map" class="center">Map</a>
+      </div>
+    </div>
+    <!-- end of navbar -->
+
+    <div>
+      <!-- boxes-container -->
+      <div class="boxes-container center" id="box">
+        <div class="box center">
+          <p class="box-title">Active Cases</p>
+          <p class="active">00000000</p>
+          <p class="last">00000000</p>
+        </div>
+        <div class="box center">
+          <p class="box-title">Recoveries</p>
+          <p class="recoveries">00000000</p>
+          <p class="last">00000000</p>
+        </div>
+        <div class="box center">
+          <p class="box-title">Total Deadth</p>
+          <p class="deadth">00000000</p>
+          <p class="last">00000000</p>
+        </div>
+        <div class="box center">
+          <p class="box-title">Confirmed</p>
+          <p class="confirm">00000000</p>
+          <p class="last">00000000</p>
+        </div>
+      </div>
+      <!-- end of boxes-container -->
+
+      <!-- table  -->
+      <div class="table-div" id="table">
+        <p>last update <span class="last">0</span></p>
+        <table class="table">
+          <thead class="thead">
+            <tr>
+              <th>S. NO.</th>
+              <th>STATE</th>
+              <th>ACTIVE</th>
+              <th>CONFIRMED</th>
+              <th>RECOVERED</th>
+              <th>DEATHS</th>
+            </tr>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
+      </div>
+      <!-- end of table  -->
+
+      <!-- map  -->
+      <div class="map center" id="map">
+        <iframe
+          src="https://maps.mapmyindia.com/covid-19?graph"
+          class="iframe"
+        ></iframe>
+      </div>
+      <!-- end of map  -->
+    </div>
+    <footer class="footer center">
+      <div class="website">
+        <a href="https://www.cowin.gov.in/" target="_blank"
+          ><i class="fa-solid fa-syringe"></i> COWIN</a
+        >
+        <a href="https://www.mygov.in/covid-19/" target="_blank"
+          ><i class="fa-solid fa-virus-covid"></i> OFFICIAL WEBSITE</a
+        >
+      </div>
+      <div class="app">
+        <a
+          href="https://www.linkedin.com/in/yash-gupta-417206193"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://yash-personal-portfolio.netlify.app/" target="_blank"
+          ><i class="fa-brands fa-internet-explorer"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
